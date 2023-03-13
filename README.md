@@ -1,3 +1,1 @@
-#!/bin/bash
-
-pwd
+Shell Basic Readme
