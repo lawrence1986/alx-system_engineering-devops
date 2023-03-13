@@ -1,3 +1,2 @@
 #!/bin/bash
-count=$(find . -mindepth 1 -type d | wc -l)
-echo "Number of directories: $count"
+find . -type d -not -name "." | wc -l
