@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This script parses the Apache log access file and displays IP for visitors
+
+awk '{print $1, $9}' apache-access.log
