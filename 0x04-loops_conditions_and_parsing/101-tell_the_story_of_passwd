@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# This script reads the content of /etc/passwd and displays user information
+
+while IFS=: read -r username _ userid groupid _ homedir shell; do
+    echo "The user $username is part of the $groupid gang, lives in $homedir and rides $shell."
+    echo "USER ID's place is protected by the passcode PASSWORD, more info about the user here: USER ID INFO"
+done < /etc/passwd
