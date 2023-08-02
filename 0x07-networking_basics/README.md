@@ -1,6 +1,6 @@
-0x07. Networking basics #0
+## 0x07. Networking basics #0
 
-This is a Networking Basic Project done during **Full Stack Software Engineering studies** at **ALX School**. The objective of this project is understand the concepts of OSI model, LAN, WAN, INTERNET,TCP/UDP **Bash programming **.
+* This is a Networking Basic Project done during **Full Stack Software Engineering studies** at **ALX School**. The objective of this project is understand the concepts of OSI model, LAN, WAN, INTERNET,TCP/UDP **Bash programming **.
 
 * The first line of all your files should be exactly #!/usr/bin/env bash
 * Your Bash script must pass shellcheck without any error
