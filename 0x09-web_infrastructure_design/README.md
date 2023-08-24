@@ -9,7 +9,7 @@ For this project, we expect you to look at these concepts:
 * Load balancer
 * Server
 
-# This is a TEAM Project done during **Full Stack Software Engineering studies** at **ALX School**. It aims to learn about building your Web Infrastructure**.
+**This is a TEAM Project done during **Full Stack Software Engineering studies** at **ALX School**. It aims to learn about building your Web Infrastructure**.
 
 
 <center> <h1>0. Simple web stack</h1> </center>
