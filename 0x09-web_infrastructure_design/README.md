@@ -1,5 +1,5 @@
 <center> <h1>0x09. Web infrastructure design</h1> </center>
----------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
 For this project, we expect you to look at these concepts:
 
 DNS
@@ -9,7 +9,7 @@ Network basics
 Load balancer
 Server
 
-* This is a TEAM Project done during **Full Stack Software Engineering studies** at **ALX School**. It aims to learn about building your Web Infrastructure**.
+## This is a TEAM Project done during **Full Stack Software Engineering studies** at **ALX School**. It aims to learn about building your Web Infrastructure**.
 
 
 <center> <h1>0. Simple web stack</h1> </center>
