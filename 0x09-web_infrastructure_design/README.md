@@ -2,20 +2,20 @@
 -------------------------------------------------------------------------------------
 For this project, we expect you to look at these concepts:
 
-DNS
-Monitoring
-Web Server
-Network basics
-Load balancer
-Server
+* DNS
+* Monitoring
+* Web Server
+* Network basics
+* Load balancer
+* Server
 
-## This is a TEAM Project done during **Full Stack Software Engineering studies** at **ALX School**. It aims to learn about building your Web Infrastructure**.
+# This is a TEAM Project done during **Full Stack Software Engineering studies** at **ALX School**. It aims to learn about building your Web Infrastructure**.
 
 
 <center> <h1>0. Simple web stack</h1> </center>
 
 ----------------------------------------------------------------------------------------
-**Design of Single-Server Web Infrastructure for www.foobar.com:**
+**Design of Single-Server Web Infrastructure for foobar.com:**
 
 1. **Server (8.8.8.8):**
    - Purpose: Host all components of the web infrastructure.
