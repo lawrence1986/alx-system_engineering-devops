@@ -1,5 +1,5 @@
 <center> <h1>0x09. Web infrastructure design</h1> </center>
--------------------------------------------------------------------------------------
+-----------------------------------------------------------
 For this project, we expect you to look at these concepts:
 
 * DNS
@@ -14,7 +14,7 @@ For this project, we expect you to look at these concepts:
 
 <center> <h1>0. Simple web stack</h1> </center>
 
-----------------------------------------------------------------------------------------
+-------------------------------------------------------------
 **Design of Single-Server Web Infrastructure for foobar.com:**
 
 1. **Server (8.8.8.8):**
@@ -39,7 +39,7 @@ For this project, we expect you to look at these concepts:
 
 6. **Domain Name foobar.com with www Record:**
    - Purpose: Provides a human-readable name for the website.
-   - Configuration: A DNS "A" record for www.foobar.com pointing to the server's IP (8.8.8.8).
+   - Configuration: A DNS "A" record for foobar.com pointing to the server's IP (8.8.8.8).
 
 **Specifics of the Infrastructure:**
 
@@ -65,12 +65,12 @@ For this project, we expect you to look at these concepts:
 
 3. **Scalability Issues:** The infrastructure cannot handle a sudden increase in incoming traffic. The single server might become overwhelmed, leading to slow performance or downtime during traffic spikes.
 
-To address these issues, consider implementing load balancing, redundant servers, and possibly cloud-based solutions to improve availability, scalability, and reliability.
+* To address these issues, consider implementing load balancing, redundant servers, and possibly cloud-based solutions to improve availability, scalability, and reliability.
 ------------------------------------------------------------------------------------------
 
 <center> <h2>1. Distributed web infrastructure</h2> </center>
 
-**Design of Three-Server Web Infrastructure for www.foobar.com:**
+**Design of Three-Server Web Infrastructure for foobar.com:**
 
 1. **Load Balancer (HAproxy):**
    - Purpose: Distribute incoming traffic across multiple servers to improve availability and performance.
@@ -181,9 +181,18 @@ To address these issues:
 3. **Uniform Server Components:**
    - Issue: Using identical components for all servers (database, web, application) might lead to resource bottlenecks. Different components often have varying resource requirements. For example, a database server might require more CPU and memory than a web server.
 
-By addressing these issues and optimizing the infrastructure, you can build a more secure, scalable, and reliable web hosting environment for foobar.com.
+By addressing these issues and optimizing the infrastructure, you can build a more secure, scalable, and reliable web hosting environment for foobar.
 
 --------------------------------------------------------------------------------------------------------------------------
+3. Scale up
+Requirements:
+
+You must add:
+1 server
+1 load-balancer (HAproxy) configured as cluster with the other one
+Split components (web server, application server, database) with their own server
+You must be able to explain some specifics about this infrastructure:
+-------------------------------------------------------------------------------------------------------------------------
 
 1. **Server**: This is the fundamental unit of your infrastructure. It's a physical or virtual machine that provides the resources necessary to run your applications and services. Each component (web server, application server, database) will be hosted on its own server for isolation and resource allocation.
 
@@ -215,4 +224,4 @@ By implementing this infrastructure with separate servers for each component and
 
 - **Maintenance**: Isolation makes maintenance and updates easier. You can take down one component for maintenance without affecting the others.
 
-## In summary, this infrastructure design addresses the key requirements of high availability, scalability, isolation, and performance optimization for each component in the system.
+* In summary, this infrastructure design addresses the key requirements of high availability, scalability, isolation, and performance optimization for each component in the system.
