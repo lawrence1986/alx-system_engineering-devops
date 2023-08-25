@@ -187,11 +187,10 @@ By addressing these issues and optimizing the infrastructure, you can build a mo
 3. Scale up
 Requirements:
 
-You must add:
-1 server
-1 load-balancer (HAproxy) configured as cluster with the other one
-Split components (web server, application server, database) with their own server
-You must be able to explain some specifics about this infrastructure:
+* 1 server
+* 1 load-balancer (HAproxy) configured as cluster with the other one
+* Split components (web server, application server, database) with their own server
+* You must be able to explain some specifics about this infrastructure:
 -------------------------------------------------------------------------------------------------------------------------
 
 1. **Server**: This is the fundamental unit of your infrastructure. It's a physical or virtual machine that provides the resources necessary to run your applications and services. Each component (web server, application server, database) will be hosted on its own server for isolation and resource allocation.
