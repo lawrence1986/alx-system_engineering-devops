@@ -53,5 +53,3 @@ When maintenance or updates are needed, such as deploying new code or configurin
 ### Limited Scalability
 
 This one-server infrastructure has limited scalability. It may struggle to handle high traffic loads, and scaling up to accommodate more users can be challenging. As traffic grows,it may encounter performance issues and slower response times, which can negatively impact the user experience.
-
-![image](https://imgur.com/a/r1Q4lvw)
