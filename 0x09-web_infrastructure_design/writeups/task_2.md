@@ -1,7 +1,7 @@
 # Secured and monitored web infrastructure
 ## Design of Three-Server Web Infrastructure for www.foobar.com:
 
-#Load Balancer (LB):
+<h3>Load Balancer (LB):</h3>
 
 * Purpose: Distribute incoming traffic across multiple servers to ensure high availability and load distribution.
 Components: Load balancing software/hardware.
@@ -33,15 +33,15 @@ Specifics of the Infrastructure:
 
 * Firewalls: Firewalls are added to protect the infrastructure by controlling and filtering traffic. They help prevent unauthorized access and protect against malicious attacks.
 
-# SSL Certificate: Serving traffic over HTTPS is essential to encrypt data transmitted between users and servers. This prevents eavesdropping and ensures data integrity during transmission.
+<h3>SSL Certificate:</h3> Serving traffic over HTTPS is essential to encrypt data transmitted between users and servers. This prevents eavesdropping and ensures data integrity during transmission.
 
-# Monitoring: Monitoring is used to track the infrastructure's performance, detect issues, and ensure uptime. Monitoring tools collect data about server health, response times, resource utilization, etc.
+<h3>Monitoring:</h3> Monitoring is used to track the infrastructure's performance, detect issues, and ensure uptime. Monitoring tools collect data about server health, response times, resource utilization, etc.
 
-# Monitoring Data Collection: Monitoring clients (data collectors) gather information from various components (servers, load balancer, database), send it to monitoring services (like Sumo Logic), and provide insights into the system's behavior.
+<h3>Monitoring Data Collection:</h3> Monitoring clients (data collectors) gather information from various components (servers, load balancer, database), send it to monitoring services (like Sumo Logic), and provide insights into the system's behavior.
 
-# Monitoring Web Server QPS (Queries Per Second): To monitor web server QPS, set up monitoring agents to track the number of incoming queries to the web servers. This data can be collected and analyzed to ensure optimal performance.
+<h3>Monitoring Web Server QPS (Queries Per Second):</h3> To monitor web server QPS, set up monitoring agents to track the number of incoming queries to the web servers. This data can be collected and analyzed to ensure optimal performance.
 
-#Issues with the Infrastructure:
+* Issues with the Infrastructure:
 
 Terminating SSL at Load Balancer Level:
 
