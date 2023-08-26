@@ -33,15 +33,15 @@ Specifics of the Infrastructure:
 
 * Firewalls: Firewalls are added to protect the infrastructure by controlling and filtering traffic. They help prevent unauthorized access and protect against malicious attacks.
 
-## SSL Certificate: Serving traffic over HTTPS is essential to encrypt data transmitted between users and servers. This prevents eavesdropping and ensures data integrity during transmission.
+# SSL Certificate: Serving traffic over HTTPS is essential to encrypt data transmitted between users and servers. This prevents eavesdropping and ensures data integrity during transmission.
 
-## Monitoring: Monitoring is used to track the infrastructure's performance, detect issues, and ensure uptime. Monitoring tools collect data about server health, response times, resource utilization, etc.
+# Monitoring: Monitoring is used to track the infrastructure's performance, detect issues, and ensure uptime. Monitoring tools collect data about server health, response times, resource utilization, etc.
 
-## Monitoring Data Collection: Monitoring clients (data collectors) gather information from various components (servers, load balancer, database), send it to monitoring services (like Sumo Logic), and provide insights into the system's behavior.
+# Monitoring Data Collection: Monitoring clients (data collectors) gather information from various components (servers, load balancer, database), send it to monitoring services (like Sumo Logic), and provide insights into the system's behavior.
 
-## Monitoring Web Server QPS (Queries Per Second): To monitor web server QPS, set up monitoring agents to track the number of incoming queries to the web servers. This data can be collected and analyzed to ensure optimal performance.
+# Monitoring Web Server QPS (Queries Per Second): To monitor web server QPS, set up monitoring agents to track the number of incoming queries to the web servers. This data can be collected and analyzed to ensure optimal performance.
 
-Issues with the Infrastructure:
+#Issues with the Infrastructure:
 
 Terminating SSL at Load Balancer Level:
 
@@ -52,4 +52,4 @@ Single MySQL Server for Writes:
 Uniform Server Components:
 
 * Issue: Using identical components for all servers (database, web, application) might lead to resource bottlenecks. Different components often have varying resource requirements. For example, a database server might require more CPU and memory than a web server.
-By addressing these issues and optimizing the infrastructure, you can build a more secure, scalable, and reliable web hosting environment for foobar.
+* By addressing these issues and optimizing the infrastructure, you can build a more secure, scalable, and reliable web hosting environment for foobar.
