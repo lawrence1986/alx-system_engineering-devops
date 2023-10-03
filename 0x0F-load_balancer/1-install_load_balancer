@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Create a script to install and configure HAProxy on lb-01 server
 sudo apt-get -y update
-apt-get -y install haproxy
+sudo apt-get -y install haproxy
 
 server_config=\
 "
