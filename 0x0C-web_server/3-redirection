@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
-# Script that configures a new Ubuntu machine to respect above requirements
+# Configure my Nginx server so /redirect_me is redirecting to another page
 
-sudo apt-get update
+sudo apt-get -y update
 sudo apt-get install -y nginx
 
 echo "Hello World!" | sudo tee /var/www/html/index.html
-string_for_replacement="server_name _;\n\trewrite ^\/redirect_me https:\/\/www.law242692118.wordpress.com permanent;"
-sudo sed -i "s/server_name _;/$string_for_replacement/" /etc/nginx/sites-enabled/default
+
+redirect="\\\n\tlocation /redirect_me {\n\t\treturn 301 https://meet.google.com;\n\t}"
+sudo sed -i "55i $redirect"  /etc/nginx/sites-available/default
 
 sudo service nginx restart
