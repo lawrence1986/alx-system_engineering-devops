@@ -34,13 +34,13 @@ defaults
         errorfile 504 /etc/haproxy/errors/504.http
 
 frontend  madutex-frontend-http
-        bind *:80
+        bind ./*glob*:80
         mode http
         http-request set-header X-Forwarded-Proto http
         default_backend madutex-backend
 
 frontend madutex-frontend-https
-        bind *:443 ssl crt /etc/haproxy/certs/www.madutex.tech.pem
+        bind ./*glob*:443 ssl crt /etc/haproxy/certs/www.madutex.tech.pem
         http-request set-header X-Forwarded-Proto https
 		http-request redirect scheme https code 301 unless { ssl_fc }
         default_backend madutex-backend
