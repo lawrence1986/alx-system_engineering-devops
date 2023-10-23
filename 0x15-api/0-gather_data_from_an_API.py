@@ -24,8 +24,7 @@ if __name__ == '__main__':
             done_tasks.append(task)
             done += 1
 
-    print(f"Employee {employee_name} is done 
-		    with tasks({done}/{len(tasks)}):")
+    print(f"Employee {employee_name} is done with tasks({done}/{len(tasks)}):")
 
     for task in done_tasks:
         print(f"\t{task.get('title')}")
