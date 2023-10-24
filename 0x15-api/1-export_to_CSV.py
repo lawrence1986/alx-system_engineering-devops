@@ -19,6 +19,6 @@ if __name__ == '__main__':
 
     with open(f"{employeeId}.csv", 'w') as file:
     for task in tasks:
-            file.write('"{}","{}","{}","{}"\n'
-                       .format(employeeId, username, task.get('completed'),
-                               task.get('title')))
+    file.write('"{}","{}","{}","{}"\n'
+	.format(employeeId, username, task.get('completed'),
+	task.get('title')))
